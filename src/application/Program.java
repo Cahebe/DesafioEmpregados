@@ -55,8 +55,9 @@ public class Program {
 			+ department.payroll());
 			System.out.println("Pagamento realizado no dia " + department.getPayDay());
 			System.out.println("Funcionários: ");
-			for (Employee emp : department.getEmployees());
-			System.out.println(department.getEmployees());
-			System.out.println("Para dúvidas favor entrar em contato: vendas@lojatop.com");
+			for (Employee emp : department.getEmployees()) {
+				System.out.println(emp.getName());
+			}
+			System.out.println("Para dúvidas favor entrar em contato: " + department.getAddress().getEmail());
 	}
 }
